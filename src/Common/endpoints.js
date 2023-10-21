@@ -1,5 +1,5 @@
 
-export const accessToken = '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';
+export const accessToken = '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';
 const owner = 'facebook';
 const repo = 'react';
 
