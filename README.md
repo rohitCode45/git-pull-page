@@ -21,7 +21,7 @@ This project is a small React app that replicates the Pull Request page of the F
 - **Pull Requests:** View a list of pull requests.
 - **Details:** See detailed information about each pull request.
 - **Toggle Open/Closed:** Switch between open and closed pull requests easily.
-- **Responsive:** Switch between open and closed pull requests easily.
+- **Responsive:** Easily accessible in all screen size devices.
 
 
 ## Usage
