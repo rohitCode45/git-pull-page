@@ -1,0 +1,100 @@
+.pr-view {
+  width: 100%;
+  height: fit-content;
+  min-height: 10em;
+  display: flex;
+  justify-content: center;
+  .pr-container {
+    width: 90%;
+    border: 1px solid rgb(255 255 255 / 8%);
+    border-radius: 0.5em;
+    margin: 1em 0em;
+    .pr-row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      row-gap: 1em;
+      padding: 0.5em 1.5em;
+      border: 1px solid rgb(255 255 255 / 8%);
+      .left-side {
+        .icon-title {
+          font-weight: 600;
+          font-size: 1.1em;
+          margin-bottom: 0.5em;
+        //   svg {
+        //     margin-right: 0.5em;
+        //   }
+        }
+        .open-pr-icon{
+            svg{
+                margin-right: 0.5em;
+                fill: green;
+            }
+        }
+        .close-pr-icon{
+            svg{
+                margin-right: 0.5em;
+                fill: purple;
+            }
+        }
+        .number-auther {
+          font-size: small;
+          padding: 0em 2em;
+          color: #a9a9a9;
+        }
+        .icon-title:hover {
+          color: #2f81f7;
+          cursor: pointer;
+        }
+      }
+    }
+    .right-side{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+            margin-right: 0.5em;
+        }
+    }
+
+    .pr-row:hover {
+      background-color: #161b22;
+    }
+    .filters {
+      display: flex;
+      padding: 0.7em 2em;
+      column-gap: 1em;
+
+      background-color: #161b22;
+      .filterButton {
+        cursor: pointer;
+        color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          fill: grey;
+          margin-right: 0.5em;
+        }
+      }
+      .selectedFilter {
+        font-weight: 600;
+        color: #ffffff;
+        svg {
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+  .skeleton {
+    animation: loading 1s infinite ease-in-out;
+  }
+  @keyframes loading {
+    0% {
+      background: #010409;
+    }
+    100% {
+      background: rgba(45, 49, 57, 0);
+    }
+  }
+}
